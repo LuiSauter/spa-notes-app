@@ -1,5 +1,6 @@
 import Row from './style'
 import { useForm } from 'react-hook-form'
+import Button from '../Button'
 // import { v4 as uuidv4 } from 'uuid'
 
 const CreateUser = ({ getUser, handleNewUser, deleteUser }) => {
@@ -24,20 +25,23 @@ const CreateUser = ({ getUser, handleNewUser, deleteUser }) => {
             <button>Save</button>
           </div>
           <span>
-            {errors.userName && <span>Must not have spaces</span>}
+            {errors.userName && <span>*Must not have spaces</span>}
           </span>
         </form>
       </div>
-      <div className='row-item'>
+      <div className='row-item__users'>
         <ul>
           {
             getUser.map(user => (
               <li key={user._id}>
-                {user.userName}
-                <button
-                  onClick={() => deleteUser(user._id)}
-                >send
-                </button>
+                <div className='header'>{user.userName}</div>
+                <div className='button'>
+                  <Button
+                    onClick={() => deleteUser(user._id)}
+                  >
+                    Delete
+                  </Button>
+                </div>
               </li>
             ))
           }

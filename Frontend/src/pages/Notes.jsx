@@ -1,7 +1,9 @@
+import ListNotes from '../components/Notes/ListNotes'
 function Notes () {
   return (
     <div>
-      Notes
+      <h2>All Notes</h2>
+      <ListNotes />
     </div>
   )
 }

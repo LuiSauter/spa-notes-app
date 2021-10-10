@@ -25,8 +25,8 @@ notesCtrl.createNote = async (req, res) => {
   })
 
   try {
-    await newNote.save()
-    res.status(201).json({ message: 'Note saved' })
+    const note = await newNote.save()
+    res.status(201).json(note)
   } catch (error) {
     console.log(error)
   }
@@ -58,7 +58,7 @@ notesCtrl.updateNote = async (req, res, next) => {
 notesCtrl.deleteNote = async (req, res, next) => {
   await NoteModel.findByIdAndDelete(req.params.id)
 
-  res.status(204).json({ message: 'Note Deleted' }).end()
+  res.status(204).json({ message: 'Note Deleted' })
 }
 
 module.exports = notesCtrl

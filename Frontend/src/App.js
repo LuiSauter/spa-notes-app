@@ -16,7 +16,7 @@ function App () {
           <Notes />
         </Route>
         <Route path='/edit/:id'>
-          <Notes />
+          <Create />
         </Route>
         <Route path='/create'>
           <Create />

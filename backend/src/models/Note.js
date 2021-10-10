@@ -10,7 +10,7 @@ const noteSchema = new Schema(
     author: String,
     date: {
       type: Date,
-      default: Date.now()
+      default: new Date()
     }
   }, {
     timestamps: true // en esta caso mongoose agrea fecha automaticamente
