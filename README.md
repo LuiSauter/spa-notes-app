@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project is a practice of a full stack bootcamp with technologies such as Nodejs, mongodb, mongoose, express and reactjs
+https://luisauter.github.io/spa-notes-app/
 
 ## Available Scripts
 
@@ -8,6 +9,9 @@ In the project directory, you can run:
 
 ### `Backend`
 https://github.com/LuiSauter/notes-backend
+
+### `install dependencies`
+mpm install
 
 ### `npm start`
 
