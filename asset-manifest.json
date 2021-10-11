@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/spa-notes-app/static/css/main.864be20f.chunk.css",
+    "main.js": "/spa-notes-app/static/js/main.406a903c.chunk.js",
+    "main.js.map": "/spa-notes-app/static/js/main.406a903c.chunk.js.map",
+    "runtime-main.js": "/spa-notes-app/static/js/runtime-main.b0d66c6b.js",
+    "runtime-main.js.map": "/spa-notes-app/static/js/runtime-main.b0d66c6b.js.map",
+    "static/css/2.ecdd39c8.chunk.css": "/spa-notes-app/static/css/2.ecdd39c8.chunk.css",
+    "static/js/2.3ecd197b.chunk.js": "/spa-notes-app/static/js/2.3ecd197b.chunk.js",
+    "static/js/2.3ecd197b.chunk.js.map": "/spa-notes-app/static/js/2.3ecd197b.chunk.js.map",
+    "index.html": "/spa-notes-app/index.html",
+    "static/css/2.ecdd39c8.chunk.css.map": "/spa-notes-app/static/css/2.ecdd39c8.chunk.css.map",
+    "static/css/main.864be20f.chunk.css.map": "/spa-notes-app/static/css/main.864be20f.chunk.css.map",
+    "static/js/2.3ecd197b.chunk.js.LICENSE.txt": "/spa-notes-app/static/js/2.3ecd197b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0d66c6b.js",
+    "static/css/2.ecdd39c8.chunk.css",
+    "static/js/2.3ecd197b.chunk.js",
+    "static/css/main.864be20f.chunk.css",
+    "static/js/main.406a903c.chunk.js"
+  ]
+}
