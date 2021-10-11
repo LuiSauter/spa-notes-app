@@ -22,7 +22,8 @@
     "styled-components": "5.3.1",
     "timeago.js": "4.0.2",
     "uuid": "8.3.2",
-    "web-vitals": "1.1.2"
+    "web-vitals": "1.1.2",
+    "gh-pages": "3.2.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -46,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "3.2.3"
   }
 }
