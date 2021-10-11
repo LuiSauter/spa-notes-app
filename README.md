@@ -6,6 +6,9 @@ This project is a practice of a full stack bootcamp with technologies such as No
 
 In the project directory, you can run:
 
+### `Backend`
+https://github.com/LuiSauter/notes-backend
+
 ### `npm start`
 
 Runs the app in the development mode.\
