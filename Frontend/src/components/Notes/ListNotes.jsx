@@ -24,7 +24,7 @@ function ListNotes () {
             </div>
             <div className='container-item__content'>
               <p className='paragraph'>{data.content}</p>
-              <p><em>- {data.author}</em></p>
+              <p><i class='far fa-user' /> {data.author}</p>
               <p style={{ color: (format(data.date).indexOf('in') !== -1) ? 'green' : '#C02739' }}>{format(data.date)}</p>
             </div>
           </div>

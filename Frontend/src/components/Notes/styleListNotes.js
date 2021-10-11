@@ -8,8 +8,8 @@ const Container = styled.div`
   flex-wrap: wrap;
   width: 90%;
   font-size: 1.3rem;
-  gap: 15px;
-  margin: 20px auto;
+  gap: 40px;
+  margin: 40px auto;
   p {
     /* box-sizing: border-box; */
     hyphens: auto;
@@ -18,7 +18,7 @@ const Container = styled.div`
     /* width: 190px; */
   }
   .container-item {
-    box-shadow: 0px 0px 6px #00ADB5;
+    /* box-shadow: 0px 0px 6px #00ADB5; */
     display: grid;
     flex-direction: row;
     grid-template-columns: 1fr 1fr;
@@ -30,9 +30,11 @@ const Container = styled.div`
     width: 100%;
     min-height: 220px;
     max-width: 420px;
+    transition: transform 1s;
     &:hover {
       /* position: static; */
-      outline: 4px solid #00ADB5;
+      /* outline: 4px solid #00ADB5; */
+      transform: scale(1.02);
     }
     &__header {
       display: flex;

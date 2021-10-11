@@ -1,7 +1,6 @@
 // Codigo de la coneccion a la base de datos
 const mongoose = require('mongoose')
 const { MONGO_DB_URI, MONGO_DB_URI_TEST } = process.env
-
 // le decimos que cree una base datos mongodb
 const connectionString = MONGO_DB_URI || MONGO_DB_URI_TEST
 

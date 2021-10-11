@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const Nav = styled.nav`
   @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
-  background-color: #14202be8;
   width: 100%;
   top: 0px;
   font-family: 'Maven Pro', sans-serif;
@@ -15,7 +14,7 @@ const Nav = styled.nav`
   align-items: center;
   position: sticky;
   font-size: 1.1rem;
-
+  z-index: 1000;
   .link {
     text-decoration: none;
     color: #ccc;
@@ -29,6 +28,10 @@ const Nav = styled.nav`
     margin: .50rem .85rem;
     align-items: center;
     justify-content: center;
+    transition: transform 1s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   & span:hover ,i:hover {
@@ -51,8 +54,8 @@ const Nav = styled.nav`
         font-weight: bold;
 
     }
-    &:hover {
-      background: #00ADc5ee;
+    & span:hover ,i:hover {
+    color: #222831;
     }
   }
 
@@ -78,7 +81,7 @@ const Nav = styled.nav`
       min-height: 45px;
       min-width: 47px;
       i {
-        color: #14202b;
+        color: #262d38;
       }
     }
   }

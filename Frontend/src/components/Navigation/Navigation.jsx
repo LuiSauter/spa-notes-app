@@ -1,5 +1,6 @@
 import Nav from './style'
 import { NavLink } from 'react-router-dom'
+import ButtonToggleTheme from './ButtonToggle/ButtonToggleTheme'
 
 const Navigation = () => {
   return (
@@ -7,7 +8,7 @@ const Navigation = () => {
       <div className='nav-button'>
         <NavLink to='/' exact className='link' activeClassName='current'>
           <div>
-            <span>Home</span>
+            <span><b>Home</b></span>
             <i className='fas fa-home' />
           </div>
         </NavLink>
@@ -16,7 +17,7 @@ const Navigation = () => {
       <div className='nav-button'>
         <NavLink to='/notes' className='link' activeClassName='current'>
           <div>
-            <span>Notes</span>
+            <span><b>Notes</b></span>
             <i className='far fa-clipboard' />
           </div>
         </NavLink>
@@ -25,7 +26,7 @@ const Navigation = () => {
       <div className='nav-button'>
         <NavLink to='/create' className='link' activeClassName='current'>
           <div>
-            <span>Create Note</span>
+            <span><b>Create Note</b></span>
             <i className='fas fa-plus-square' />
           </div>
         </NavLink>
@@ -33,11 +34,12 @@ const Navigation = () => {
       <div className='nav-button'>
         <NavLink to='/user' className='link' activeClassName='current'>
           <div>
-            <span>User</span>
+            <span><b>User</b></span>
             <i className='fas fa-user' />
           </div>
         </NavLink>
       </div>
+      <ButtonToggleTheme />
     </Nav>
   )
 }

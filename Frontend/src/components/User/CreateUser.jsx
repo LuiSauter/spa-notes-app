@@ -1,7 +1,6 @@
 import Row from './style'
 import { useForm } from 'react-hook-form'
 import Button from '../Button'
-// import { v4 as uuidv4 } from 'uuid'
 
 const CreateUser = ({ getUser, handleNewUser, deleteUser }) => {
   const { register, handleSubmit, formState: { errors } } = useForm()
@@ -15,7 +14,6 @@ const CreateUser = ({ getUser, handleNewUser, deleteUser }) => {
     <Row>
       <div className='row-item'>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h3>Create New User</h3>
           <div className='div'>
             <input
               placeholder='Created a new user'
@@ -24,9 +22,9 @@ const CreateUser = ({ getUser, handleNewUser, deleteUser }) => {
             />
             <button>Save</button>
           </div>
-          <span>
+          <div>
             {errors.userName && <span>*Must not have spaces</span>}
-          </span>
+          </div>
         </form>
       </div>
       <div className='row-item__users'>

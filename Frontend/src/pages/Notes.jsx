@@ -1,8 +1,9 @@
 import ListNotes from '../components/Notes/ListNotes'
+import SubTitles from '../components/SubTitles'
 function Notes () {
   return (
     <div>
-      <h2>All Notes</h2>
+      <SubTitles>PENDING NOTES</SubTitles>
       <ListNotes />
     </div>
   )

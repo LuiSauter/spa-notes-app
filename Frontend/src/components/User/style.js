@@ -4,7 +4,7 @@ const Row = styled.div`
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   width: 100%;
-  margin: auto;
+  margin: 30px auto;
   gap: 15px;
   font-size: 1.4rem;
   li {
@@ -20,15 +20,18 @@ const Row = styled.div`
   .row-item {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
     form {
-      position: fixed;
-      width: 30%;
-      top: 80px;
-      left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      min-width: 70%;
+
     }
     & form span {
       font-size: 1rem;
@@ -44,11 +47,11 @@ const Row = styled.div`
     .div {
       display: flex;
       width: 95%;
+      margin: auto;
       flex-direction: column;
-      /* justify-content: flex-start; */
-      /* align-items: center; */
+      margin-bottom: 10px;
+
       input, button {
-        /* display: flex; */
         font-size: 1.1rem;
         padding: .8rem .7rem;
         border: 2px solid #00ADB5;
@@ -75,8 +78,7 @@ const Row = styled.div`
       ul {
         gap: 20px;
         width: 95%;
-        margin: 25px auto;
-        margin-top: 25px;
+        margin: 0px auto;
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -88,10 +90,12 @@ const Row = styled.div`
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          /* background-color: #00ADB5; */
           border-radius: 5px;
-          /* padding: 0 .6rem; */
           word-wrap: break-word;
+          transition: transform .8s;
+          &:hover {
+            transform: scale(1.03);
+          }
           .header{
             word-wrap: break-word;
             /* border: 1px solid #00ADB5; */
@@ -127,11 +131,7 @@ const Row = styled.div`
       form {
         width: 100%;
         position: static;
-        /* display: flex; */
-        /* width: 40%; */
         top: 0;
-        /* left: 0;
-        right: 0; */
       }
     }
     .row-item .div {
@@ -140,11 +140,14 @@ const Row = styled.div`
       justify-content: center;
       align-items: center;
       width: 100%;
-      /* margin-right: 0; */
+      input, button {
+        padding: .8rem 1rem;
+      }
       input {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0px;
+        width: 50%;
       }
       button {
         border-top-right-radius: 10px;
@@ -152,9 +155,7 @@ const Row = styled.div`
         border-bottom-left-radius: 0;
       }
     }
-    .row-item__users ul li {
-      /* max-width: 240px */
-    }
+
   }
 `
 export default Row

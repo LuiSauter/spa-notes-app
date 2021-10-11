@@ -6,9 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css'
 import Button from '../Button'
 import { useParams } from 'react-router-dom'
 import { findNoteId } from '../../services/notes'
-// const defaultValues = {
-//   datePicker: new Date()
-// }
+
 const initalValue = {
   selectUser: '',
   title: '',
@@ -64,8 +62,8 @@ const CreateNote = ({ getUser, PostNoteAdd }) => {
 
   return (
     <Div>
-      <h3>Create a Note</h3>
       <form onSubmit={handleSubmit}>
+        <label>User</label>
         <select
           name='selectUser'
           onChange={onInputChange}
@@ -80,6 +78,7 @@ const CreateNote = ({ getUser, PostNoteAdd }) => {
               </option>)
           }
         </select>
+        <label>Note title</label>
         <input
           placeholder='Title'
           type='text'
@@ -88,14 +87,16 @@ const CreateNote = ({ getUser, PostNoteAdd }) => {
           onChange={onInputChange}
           value={data.title}
         />
+        <label>Note description</label>
         <input
-          placeholder='Content'
+          placeholder='description'
           type='text'
           name='content'
           required
           onChange={onInputChange}
           value={data.content}
         />
+        <label>Select a date</label>
         <DatePicker
           selected={data.date}
           onChange={onChangeDate}
