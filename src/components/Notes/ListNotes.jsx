@@ -17,7 +17,7 @@ function ListNotes () {
               </div>
               <div className='container-item__footer'>
                 <Button onClick={() => handleDeleteNote(data._id)}>Delete</Button>
-                <Link to={`/edit/${data._id}`}>
+                <Link to={`/spa-notes-app/edit/${data._id}`}>
                   <Button className='link'>Edit</Button>
                 </Link>
               </div>

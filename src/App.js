@@ -37,19 +37,19 @@ function App () {
         <Navigation />
         <div className='todolist'>
           <Switch>
-            <Route path='/notes'>
+            <Route path='/spa-notes-app/notes'>
               <Notes />
             </Route>
-            <Route path='/edit/:id'>
+            <Route path='/spa-notes-app/edit/:id'>
               <Create />
             </Route>
-            <Route path='/create'>
+            <Route path='/spa-notes-app/create'>
               <Create />
             </Route>
-            <Route path='/user'>
+            <Route path='/spa-notes-app/user'>
               <User />
             </Route>
-            <Route path='/' exact>
+            <Route path='/spa-notes-app/' exact>
               <Home />
             </Route>
           </Switch>
