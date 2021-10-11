@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <Nav>
       <div className='nav-button'>
-        <NavLink to='/' exact className='link' activeClassName='current'>
+        <NavLink to='/spa-notes-app/' exact className='link' activeClassName='current'>
           <div>
             <span><b>Home</b></span>
             <i className='fas fa-home' />
@@ -15,7 +15,7 @@ const Navigation = () => {
       </div>
 
       <div className='nav-button'>
-        <NavLink to='/notes' className='link' activeClassName='current'>
+        <NavLink to='/spa-notes-app/notes' className='link' activeClassName='current'>
           <div>
             <span><b>Notes</b></span>
             <i className='far fa-clipboard' />
@@ -24,7 +24,7 @@ const Navigation = () => {
       </div>
 
       <div className='nav-button'>
-        <NavLink to='/create' className='link' activeClassName='current'>
+        <NavLink to='/spa-notes-app/create' className='link' activeClassName='current'>
           <div>
             <span><b>Create Note</b></span>
             <i className='fas fa-plus-square' />
@@ -32,7 +32,7 @@ const Navigation = () => {
         </NavLink>
       </div>
       <div className='nav-button'>
-        <NavLink to='/user' className='link' activeClassName='current'>
+        <NavLink to='/spa-notes-app/user' className='link' activeClassName='current'>
           <div>
             <span><b>User</b></span>
             <i className='fas fa-user' />
