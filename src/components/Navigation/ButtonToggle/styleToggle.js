@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Button = styled.button`
+const ButtonToggle = styled.button`
   background-color: rgba(0, 0, 0, 0);
   border: none;
   margin: .45rem;
@@ -55,4 +55,4 @@ const Button = styled.button`
     transform: translateY(0%) rotateZ(0deg);
   }
 `
-export default Button
+export default ButtonToggle

@@ -3,10 +3,8 @@ import styled from 'styled-components'
 const FooterStyle = styled.div`
   position: absolute;
   bottom: 0;
-  /* background-color: #14202b; */
   text-align: center;
   width: 100%;
-  /* height: 40px; */
   padding: 2rem;
   .icons {
     display: flex;

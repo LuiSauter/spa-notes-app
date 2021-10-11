@@ -1,10 +1,12 @@
 import Row from './style'
 import { useForm } from 'react-hook-form'
-import Button from '../Button'
+import Button from '../../styles/Button'
+import Loading from '../Loading/Loading'
+import useFetch from '../../hooks/useFetch'
 
 const CreateUser = ({ getUser, handleNewUser, deleteUser }) => {
   const { register, handleSubmit, formState: { errors } } = useForm()
-
+  const { loading } = useFetch()
   const onSubmit = (data, e) => {
     handleNewUser(data)
     e.target.reset()
@@ -27,6 +29,9 @@ const CreateUser = ({ getUser, handleNewUser, deleteUser }) => {
           </div>
         </form>
       </div>
+      {
+        loading ? <Loading /> : ''
+      }
       <div className='row-item__users'>
         <ul>
           {

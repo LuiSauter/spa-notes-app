@@ -4,10 +4,15 @@ import { getAllUser, createUser, deleteUserId } from '../services/users'
 const useFetch = () => {
   const [getUser, setUser] = useState([])
   const [delUser, setDelUser] = useState({})
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    setLoading(true)
     const getUserAll = () => {
-      getAllUser().then((data) => setUser((prev) => prev.concat(data)))
+      getAllUser().then((data) => {
+        setUser((prev) => prev.concat(data))
+        setLoading(false)
+      })
     }
     getUserAll()
   }, [])
@@ -37,7 +42,7 @@ const useFetch = () => {
     })
   }
 
-  return { getUser, handleNewUser, deleteUser }
+  return { loading, getUser, handleNewUser, deleteUser }
 }
 
 export default useFetch

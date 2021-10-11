@@ -16,6 +16,7 @@ export const findNoteId = async (id) => {
 }
 
 export const createNote = async ({ title, content, date, author }) => {
+  console.log(title, content, date, author)
   const res = await axios.post(DB_API_NOTES, { title, content, date, author })
   const { data } = res
   return data

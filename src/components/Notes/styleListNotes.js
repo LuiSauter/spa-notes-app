@@ -4,21 +4,17 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
+  transition: all 1.5s ease-in-out;
   flex-wrap: wrap;
   width: 90%;
   font-size: 1.3rem;
   gap: 40px;
   margin: 40px auto;
   p {
-    /* box-sizing: border-box; */
     hyphens: auto;
     padding: 10px;
-    /* width: fit-content; */
-    /* width: 190px; */
   }
   .container-item {
-    /* box-shadow: 0px 0px 6px #00ADB5; */
     display: grid;
     flex-direction: row;
     grid-template-columns: 1fr 1fr;
@@ -32,8 +28,6 @@ const Container = styled.div`
     max-width: 420px;
     transition: transform 1s;
     &:hover {
-      /* position: static; */
-      /* outline: 4px solid #00ADB5; */
       transform: scale(1.02);
     }
     &__header {
@@ -75,11 +69,6 @@ const Container = styled.div`
         background-color: #FFB344;
       }
     }
-  }
-  @media screen and (min-width: 760px) {
-    .container-item {
-    /* max-width: 400px; */
-  }
   }
 `
 

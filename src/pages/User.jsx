@@ -1,4 +1,4 @@
-import SubTitles from '../components/SubTitles'
+import SubTitles from '../styles/SubTitles'
 import CreateUser from '../components/User/CreateUser'
 import useFetch from '../hooks/useFetch'
 

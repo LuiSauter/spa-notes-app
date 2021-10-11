@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
-import Hero from '../components/Hero'
+import Hero from '../styles/Hero'
+import Loading from '../components/Loading/Loading'
 import ListNotes from '../components/Notes/ListNotes'
-import SubTitles from '../components/SubTitles'
+import SubTitles from '../styles/SubTitles'
 import Technologies from '../components/Technologies/Technologies'
+import useFetch from '../hooks/useFetch'
 
 function Home () {
+  const { loading } = useFetch()
   return (
     <div>
       <SubTitles>TODO LIST NOTES</SubTitles>
@@ -28,6 +31,9 @@ function Home () {
           </Link>
         </div>
       </Hero>
+      {
+        loading ? <Loading /> : ''
+      }
       <ListNotes />
       <Technologies />
     </div>

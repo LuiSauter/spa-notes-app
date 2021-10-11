@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker'
 import { useEffect, useState } from 'react'
 import Div from './styleCreate'
 import 'react-datepicker/dist/react-datepicker.css'
-import Button from '../Button'
+import Button from '../../styles/Button'
 import { useParams } from 'react-router-dom'
 import { findNoteId } from '../../services/notes'
 
@@ -18,6 +18,7 @@ const initalValue = {
 
 const CreateNote = ({ getUser, PostNoteAdd }) => {
   const [data, setData] = useState(initalValue)
+  const [messageAdd, setMessageAdd] = useState(false)
   const { id } = useParams()
 
   useEffect(() => {
@@ -40,7 +41,8 @@ const CreateNote = ({ getUser, PostNoteAdd }) => {
     e.preventDefault()
     if (data.selectUser === '') return
     PostNoteAdd(data)
-    window.location.href = '/notes'
+    setMessageAdd(true)
+    // window.location.href = '/notes'
     setData(initalValue)
   }
 
@@ -50,6 +52,7 @@ const CreateNote = ({ getUser, PostNoteAdd }) => {
       ...note,
       [e.target.name]: e.target.value
     })
+    setMessageAdd(false)
   }
 
   const onChangeDate = (date) => {
@@ -101,9 +104,16 @@ const CreateNote = ({ getUser, PostNoteAdd }) => {
           selected={data.date}
           onChange={onChangeDate}
         />
-        <Button>
-          {data.editing ? 'Update' : 'save'}
-        </Button>
+        <div className='btn'>
+          <Button>
+            {data.editing ? 'Update' : 'save'}
+          </Button>
+        </div>
+        <div className='message-add'>
+          {
+            messageAdd ? <b>note created successfully</b> : ''
+          }
+        </div>
       </form>
     </Div>
   )

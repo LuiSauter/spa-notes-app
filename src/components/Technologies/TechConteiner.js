@@ -3,15 +3,19 @@ import styled from 'styled-components'
 const TechConteiner = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 2rem;
+  width: 100%;
   .tech-item {
-    /* width: 100%; */
-    /* width: 100%; */
-    font-size: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 5rem;
+    }
     .js {
       color: #F0A500
     }

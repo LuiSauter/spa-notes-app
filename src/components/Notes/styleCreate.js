@@ -47,6 +47,10 @@ const Div = styled.div`
     }
     button {
       background-color: #00ADB5;
+      border-radius: 7px;
+    }
+    .btn button {
+      background-color: #00ADB5;
       padding: .8rem 3rem;
       border-radius: 7px;
       width: 100%;
@@ -54,6 +58,10 @@ const Div = styled.div`
       &:active {
         background-color: #00ADB5aa;
       }
+    }
+    .message-add {
+      padding: .8rem .8rem 0 .8rem;
+      color: #3e823d;
     }
     input {
       word-wrap: break-word;

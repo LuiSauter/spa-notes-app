@@ -1,12 +1,12 @@
 import { useGlobalState } from '../../../store/darkThemeStore'
-import Button from './styleToggle'
+import ButtonToggle from './styleToggle'
 
 function ButtonToggleTheme () {
   const [isDarkMode, setIsDarkMode] = useGlobalState('isDarakMode')
   const handleClick = () => setIsDarkMode(!isDarkMode)
 
   return (
-    <Button
+    <ButtonToggle
       onClick={handleClick}
       name='toggle dark mode'
     >
@@ -18,7 +18,7 @@ function ButtonToggleTheme () {
       >
         <i className='fas fa-moon' />
       </div>
-    </Button>
+    </ButtonToggle>
   )
 }
 

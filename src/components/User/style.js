@@ -78,7 +78,6 @@ const Row = styled.div`
       ul {
         gap: 20px;
         width: 95%;
-        margin: 0px auto;
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -98,7 +97,6 @@ const Row = styled.div`
           }
           .header{
             word-wrap: break-word;
-            /* border: 1px solid #00ADB5; */
             border-left: 2px solid #00ADB5;
             border-right: 2px solid #00ADB5;
             border-top: 2px solid #00ADB5;
@@ -130,7 +128,7 @@ const Row = styled.div`
     .row-item {
       form {
         width: 100%;
-        position: static;
+        /* position: static; */
         top: 0;
       }
     }

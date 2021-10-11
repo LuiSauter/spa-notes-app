@@ -1,5 +1,5 @@
 import CreateNote from '../components/Notes/CreateNote'
-import SubTitles from '../components/SubTitles'
+import SubTitles from '../styles/SubTitles'
 import useFetch from '../hooks/useFetch'
 import useNote from '../hooks/useNote'
 function Create () {

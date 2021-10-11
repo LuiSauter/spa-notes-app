@@ -19,6 +19,7 @@ function useNote () {
   }, [delNote.title])
 
   const PostNoteAdd = (data) => {
+    console.log(data)
     const newNote = {
       title: data.title,
       content: data.content,
