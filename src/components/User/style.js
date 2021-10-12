@@ -73,11 +73,11 @@ const Row = styled.div`
       }
     }
     &__users {
-      width: 95%;
+      width: 100%;
       margin: auto;
       ul {
         gap: 20px;
-        width: 95%;
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: row;

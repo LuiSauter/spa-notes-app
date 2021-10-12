@@ -37,19 +37,19 @@ function App () {
         <Navigation />
         <div className='todolist'>
           <Switch>
-            <Route path='https://luisauter.github.io/spa-notes-app/notes'>
+            <Route path='/spa-notes-app/notes'>
               <Notes />
             </Route>
-            <Route path='https://luisauter.github.io/spa-notes-app/edit/:id'>
+            <Route path='/spa-notes-app/edit/:id'>
               <Create />
             </Route>
-            <Route path='https://luisauter.github.io/spa-notes-app/create'>
+            <Route path='/spa-notes-app/create'>
               <Create />
             </Route>
-            <Route path='https://luisauter.github.io/spa-notes-app/user'>
+            <Route path='/spa-notes-app/user'>
               <User />
             </Route>
-            <Route path='https://luisauter.github.io/spa-notes-app/' exact>
+            <Route path='/spa-notes-app/' exact>
               <Home />
             </Route>
           </Switch>
