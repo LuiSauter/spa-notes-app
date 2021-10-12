@@ -7,13 +7,15 @@ https://luisauter.github.io/spa-notes-app/
 
 In the project directory, you can run:
 
-### `Backend`
+### Backend
 https://github.com/LuiSauter/notes-backend
 
-### `install dependencies`
-mpm install
+### Install dependencies
+`mpm install`
 
-### `npm start`
+### Start project
+
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -25,5 +27,5 @@ You will also see any lint errors in the console.
 
 The test will be done soon
 
-### `instagram :)`
+### instagram :)
 https://www.instagram.com/sauterdev/
