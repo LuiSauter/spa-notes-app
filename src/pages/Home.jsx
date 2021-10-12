@@ -13,7 +13,7 @@ function Home () {
       <SubTitles>TODO LIST NOTES</SubTitles>
       <Hero>
         <div className='hero-item'>
-          <Link to='/spa-notes-app/user'>
+          <Link to='/user'>
             <p>
               <i className='fas fa-user-plus' />
               <br />
@@ -22,7 +22,7 @@ function Home () {
           </Link>
         </div>
         <div className='hero-item'>
-          <Link to='/spa-notes-app/create'>
+          <Link to='/create'>
             <p>
               <i className='fas fa-clipboard' />
               <br />
