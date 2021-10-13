@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project is a practice of a full stack bootcamp with technologies such as Nodejs, mongodb, mongoose, express and reactjs
-https://luisauter.github.io/spa-notes-app/
+ https://46cbv.csb.app/spa-notes-app/
 
 ## Available Scripts
 
